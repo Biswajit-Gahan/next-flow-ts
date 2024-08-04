@@ -1,1 +1,28 @@
-.main{}
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    width: inherit;
+    margin: 5rem auto 0;
+    text-align: center;
+}
+
+.heading {
+    font-size: var(--extra-large-font-size);
+    font-weight: 600;
+    color: var(--orange-color);
+}
+
+.description {
+    margin-top: 1rem;
+    font-size: var(--small-font-size);
+    color: var(--soft-dark-color);
+}
+
+.pageLink {}
+
+.pageLink:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--orange-color);
+}

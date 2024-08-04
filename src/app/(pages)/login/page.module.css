@@ -1,0 +1,71 @@
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    width: inherit;
+    margin: 5rem auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contentContainer {
+    width: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.heading {
+    font-size: var(--extra-large-font-size);
+    font-weight: 700;
+    color: var(--orange-color);
+}
+
+.description {
+    font-size: var(--small-font-size);
+    color: var(--soft-dark-color);
+    margin-top: 0.2rem;
+}
+
+.form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    border: 0.05rem solid var(--soft-dark-color);
+    background-color: inherit;
+    color: inherit;
+    padding: 0 1rem;
+    transition: var(--default-transition);
+}
+
+.input:focus {
+    border-color: var(--orange-color);
+}
+
+.button {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--orange-color);
+    color: var(--light-color);
+}
+
+.info {
+    margin-top: 1rem;
+    font-size: var(--small-font-size);
+    color: var(--soft-dark-color);
+}
+
+.webLink {
+    text-decoration: underline;
+    color: var(--orange-color);
+    font-weight: 600;
+}

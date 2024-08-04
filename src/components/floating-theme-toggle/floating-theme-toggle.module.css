@@ -1,0 +1,38 @@
+.container {
+    position: fixed;
+    width: 2.8rem;
+    background-color: transparent;
+    border: 0.1rem solid var(--soft-dark-color);
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+.svgIcons {
+    cursor: pointer;
+}
+
+.toggleButton {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    left: 0;
+    transform: translateX(25%);
+    transition: var(--default-transition);
+}
+
+.toggleRight {
+    left: 100%;
+    transform: translateX(-125%);
+}
+
+.toggleLeft {
+    left: 0;
+    transform: translateX(25%);
+}
