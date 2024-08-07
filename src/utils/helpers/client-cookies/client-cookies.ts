@@ -8,6 +8,7 @@ const CLIENT_COOKIES = {
 
         return foundData.split('=')[1];
     },
+
     setCookie: (key: string, value: string, expireTime: string) => {
         document.cookie = `${key}=${value};expires=${expireTime};path="/";`;
     },

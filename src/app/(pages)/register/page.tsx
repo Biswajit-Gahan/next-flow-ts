@@ -3,6 +3,11 @@ import Navbar from "@/components/navbar/navbar";
 import Link from "next/link";
 import CONFIG from "@/utils/configurations/config";
 import RegisterForm from "@/app/(pages)/register/register-form/register-form";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Register"
+}
 
 export default function Register() {
     return <section className={styles.container}>

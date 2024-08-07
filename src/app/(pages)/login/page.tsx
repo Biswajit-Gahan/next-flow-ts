@@ -3,6 +3,11 @@ import Navbar from "@/components/navbar/navbar";
 import Link from "next/link";
 import CONFIG from "@/utils/configurations/config";
 import LoginForm from "@/app/(pages)/login/login-form/login-form";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Login"
+}
 
 export default function Login() {
     return <section className={styles.container}>
