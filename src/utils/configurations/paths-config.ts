@@ -4,7 +4,7 @@ const DEFAULT_PATHS = {
     GALLERY: "/gallery",
     LOGIN: "/login",
     REGISTER: "/register",
-    product: (id: number): string => {
+    product: (id: string): string => {
         return `/products/${id}`
     }
 }

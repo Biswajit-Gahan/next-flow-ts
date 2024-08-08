@@ -4,7 +4,7 @@
     --light-color: #ffffff;
     --orange-color: #ff5900;
     --soft-light-color: #efefef;
-    --soft-dark-color: #5c5c5c;
+    --soft-dark-color: #919191;
 
     /* TRANSITIONS */
     --theme-transition: 200ms;
@@ -71,4 +71,9 @@ button {
     font-weight: inherit;
     border: none;
     cursor: pointer;
+}
+
+select {
+    outline: none;
+    border: none;
 }

@@ -17,7 +17,7 @@ type ActionType = {
 }
 
 const initialThemeState: ThemeState = {
-    darkMode: HELPERS.CLIENT_COOKIES.getCookie(CONFIG.COOKIES_CONFIG.KEY_THEME) === CONFIG.THEMES_CONFIG.DARK,
+    darkMode: HELPERS.CLIENT_COOKIES.getCookie(CONFIG.COOKIES_CONFIG.KEY_THEME) !== CONFIG.THEMES_CONFIG.LIGHT,
 }
 
 const ThemeContext = createContext<{themeState:ThemeState, setThemeState: React.Dispatch<ActionType>}>(
@@ -47,7 +47,7 @@ export function useThemeContext() {
         HELPERS.CLIENT_COOKIES.setCookie(
             CONFIG.COOKIES_CONFIG.KEY_THEME,
             state.darkMode ? CONFIG.THEMES_CONFIG.DARK : CONFIG.THEMES_CONFIG.LIGHT,
-            HELPERS.CLIENT_COOKIES.setExpires(24)
+            HELPERS.CLIENT_COOKIES.setExpires(0.01)
         );
 
         context.setThemeState({

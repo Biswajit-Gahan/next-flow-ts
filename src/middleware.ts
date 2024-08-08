@@ -3,7 +3,7 @@ import {cookies} from "next/headers";
 import CONFIG from "@/utils/configurations/config";
 
 export function middleware(request: NextRequest) {
-    // const pathName = request.nextUrl.pathname;
+    const pathName = request.nextUrl.pathname;
     // const clientToken = cookies().get(CONFIG.COOKIES_CONFIG.KEY_CLIENT_TOKEN)?.value;
     //
     // const RESTRICTED_PATHS = [
@@ -30,7 +30,9 @@ export function middleware(request: NextRequest) {
     //     ))
     // }
 
-    return NextResponse.next();
+    const response =  NextResponse.next();
+    response.headers.set("pathname", pathName);
+    return response;
 }
 
 export const config = {

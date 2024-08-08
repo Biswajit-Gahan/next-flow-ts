@@ -1,12 +1,23 @@
 import styles from "./products.module.css";
 import {Metadata} from "next";
 import Navbar from "@/components/navbar/navbar";
+import Image from "next/image";
+import Link from "next/link";
+import CONFIG from "@/utils/configurations/config";
 
 export const metadata: Metadata = {
     title: "Products",
 }
 
-const fakeProducts = [
+type ProductType = {
+    productId: string,
+    productName: string,
+    productDescription: string,
+    productPrice: string,
+    productImage: string,
+}
+
+const fakeProducts: ProductType[] = [
     {
         productId: "1",
         productName: "Product 1",
@@ -80,12 +91,56 @@ const fakeProducts = [
     },
 ]
 
+function ProductCard ({product}: {product: ProductType}) {
+    return <div className={styles.productCardContainer}>
+            <Image className={styles.productImage} src={product.productImage} alt={"product image"} width={100} height={100} draggable={"false"} />
+            <div className={styles.productLinkContainer}>
+                <Link className={styles.productLink} href={`${CONFIG.PATHS_CONFIG.DEFAULT_PATHS.product(product.productId)}`} prefetch={false}>{product.productName}</Link>
+                <span className={styles.productPrice}>{product.productPrice}</span>
+            </div>
+    </div>
+}
+
 export default function Products() {
-    return <section>
+    return <section className={styles.container}>
         <Navbar />
-        <div>
-            <div>Products Filters</div>
-            <div>All Products</div>
+        <div className={styles.wrapper}>
+            <div className={styles.filterContainer}>
+                <div className={styles.searchContainer}>
+                    <input className={styles.searchInput} type="text" placeholder={"Search a product"}/>
+                    <button className={styles.addButton} type={"button"}>Add new item</button>
+                </div>
+
+                <div className={styles.filterWrapper}>
+                    <div className={styles.selectWrapper}>
+                        <select className={styles.filterSelect} name={"short"} defaultValue={""}>
+                            <option value={""} disabled={true}>Short By</option>
+                            <option value="asc">Low to high</option>
+                            <option value="desc">High to low</option>
+                            <option value="new">Newest</option>
+                            <option value="old">Oldest</option>
+                        </select>
+                    </div>
+
+                    <div className={styles.selectWrapper}>
+                        <select className={styles.filterSelect} name={"filter"} defaultValue={""}>
+                            <option value={""}>Filter by size</option>
+                            <option value="l">Large</option>
+                            <option value="m">Medium</option>
+                            <option value="s">Small</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.productsWrapper}>
+                <div className={styles.productCardsWrapper}>
+                    {
+                        fakeProducts.map((product, index) => {
+                            return <ProductCard key={index} product={product} />
+                        })
+                    }
+                </div>
+            </div>
         </div>
     </section>
 }
