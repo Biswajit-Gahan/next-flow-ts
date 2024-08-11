@@ -1,0 +1,34 @@
+.container {}
+
+.wrapper {
+    margin-top: 5rem;
+}
+
+.text {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.galleryText {
+    position: relative;
+    font-size: 5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.galleryText::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 100%;
+    background-color: var(--orange-color);
+    opacity: 0.1;
+    transition: var(--default-transition);
+}
+
+.galleryText:hover::before {
+    width: 100%;
+}

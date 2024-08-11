@@ -23,7 +23,7 @@ const fakeProducts: ProductType[] = [
         productName: "Product 1",
         productDescription: "Product description 1",
         productPrice: "Rs.745",
-        productImage: "https://images.pexels.com/photos/27396757/pexels-photo-27396757/free-photo-of-a-man-in-a-black-shirt-and-jeans-standing-on-a-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        productImage: "https://images.pexels.com/photos/27457297/pexels-photo-27457297/free-photo-of-woman-standing-in-dress-with-flowers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
 
     {
@@ -31,7 +31,7 @@ const fakeProducts: ProductType[] = [
         productName: "Product 2",
         productDescription: "Product description 2",
         productPrice: "Rs.645",
-        productImage: "https://images.pexels.com/photos/27396757/pexels-photo-27396757/free-photo-of-a-man-in-a-black-shirt-and-jeans-standing-on-a-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        productImage: "https://images.pexels.com/photos/27457297/pexels-photo-27457297/free-photo-of-woman-standing-in-dress-with-flowers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
 
     {
@@ -39,7 +39,7 @@ const fakeProducts: ProductType[] = [
         productName: "Product 3",
         productDescription: "Product description 3",
         productPrice: "Rs.345",
-        productImage: "https://images.pexels.com/photos/27396757/pexels-photo-27396757/free-photo-of-a-man-in-a-black-shirt-and-jeans-standing-on-a-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        productImage: "https://images.pexels.com/photos/27457297/pexels-photo-27457297/free-photo-of-woman-standing-in-dress-with-flowers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
 
     {
@@ -47,7 +47,7 @@ const fakeProducts: ProductType[] = [
         productName: "Product 4",
         productDescription: "Product description 4",
         productPrice: "Rs.445",
-        productImage: "https://images.pexels.com/photos/27396757/pexels-photo-27396757/free-photo-of-a-man-in-a-black-shirt-and-jeans-standing-on-a-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        productImage: "https://images.pexels.com/photos/27457297/pexels-photo-27457297/free-photo-of-woman-standing-in-dress-with-flowers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
 
     {
@@ -55,7 +55,7 @@ const fakeProducts: ProductType[] = [
         productName: "Product 5",
         productDescription: "Product description 5",
         productPrice: "Rs.545",
-        productImage: "https://images.pexels.com/photos/27396757/pexels-photo-27396757/free-photo-of-a-man-in-a-black-shirt-and-jeans-standing-on-a-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        productImage: "https://images.pexels.com/photos/27457297/pexels-photo-27457297/free-photo-of-woman-standing-in-dress-with-flowers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
 
     {
@@ -63,7 +63,7 @@ const fakeProducts: ProductType[] = [
         productName: "Product 6",
         productDescription: "Product description 6",
         productPrice: "Rs.645",
-        productImage: "https://images.pexels.com/photos/27396757/pexels-photo-27396757/free-photo-of-a-man-in-a-black-shirt-and-jeans-standing-on-a-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        productImage: "https://images.pexels.com/photos/27457297/pexels-photo-27457297/free-photo-of-woman-standing-in-dress-with-flowers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
 
     {
@@ -71,7 +71,7 @@ const fakeProducts: ProductType[] = [
         productName: "Product 7",
         productDescription: "Product description 7",
         productPrice: "Rs.745",
-        productImage: "https://images.pexels.com/photos/27396757/pexels-photo-27396757/free-photo-of-a-man-in-a-black-shirt-and-jeans-standing-on-a-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        productImage: "https://images.pexels.com/photos/27457297/pexels-photo-27457297/free-photo-of-woman-standing-in-dress-with-flowers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
 
     {
@@ -79,7 +79,7 @@ const fakeProducts: ProductType[] = [
         productName: "Product 8",
         productDescription: "Product description 8",
         productPrice: "Rs.845",
-        productImage: "https://images.pexels.com/photos/27396757/pexels-photo-27396757/free-photo-of-a-man-in-a-black-shirt-and-jeans-standing-on-a-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        productImage: "https://images.pexels.com/photos/27457297/pexels-photo-27457297/free-photo-of-woman-standing-in-dress-with-flowers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
 
     {
@@ -87,7 +87,7 @@ const fakeProducts: ProductType[] = [
         productName: "Product 9",
         productDescription: "Product description 9",
         productPrice: "Rs.945",
-        productImage: "https://images.pexels.com/photos/27396757/pexels-photo-27396757/free-photo-of-a-man-in-a-black-shirt-and-jeans-standing-on-a-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        productImage: "https://images.pexels.com/photos/27457297/pexels-photo-27457297/free-photo-of-woman-standing-in-dress-with-flowers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
 ]
 
