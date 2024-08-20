@@ -9,12 +9,17 @@ const DEFAULT_PATHS = {
     }
 }
 
-const API_ENDPOINTS = {}
+const API_PATHS = {
+    LOGIN: "/login",
+    REGISTER: "/register",
+    BASE_URL: "/api",
+    LOGOUT: "/logout",
+}
 
 
 const PATHS_CONFIG = {
     DEFAULT_PATHS,
-    API_ENDPOINTS,
+    API_PATHS,
 }
 
 export default PATHS_CONFIG;

@@ -1,11 +1,13 @@
 import CLIENT_COOKIES from "@/utils/helpers/client-cookies/client-cookies";
-import JSON_WEB_TOKEN from "@/utils/helpers/json-web-token/json-web-token";
-import asyncWrapper from "@/utils/helpers/async-wrapper/async-wrapper";
+import apiRequest from "@/utils/helpers/api-request/api-request";
+import DATABASE from "@/utils/helpers/database/database";
+import validateUser from "@/utils/helpers/validate-user/validate-user";
 
 const HELPERS = {
     CLIENT_COOKIES,
-    JSON_WEB_TOKEN,
-    asyncWrapper,
+    API_REQUEST: apiRequest,
+    DATABASE,
+    VALIDATE_USER: validateUser,
 }
 
 export default HELPERS;

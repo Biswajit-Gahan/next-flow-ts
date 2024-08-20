@@ -2,8 +2,10 @@ import styles from "./products.module.css";
 import {Metadata} from "next";
 import Navbar from "@/components/navbar/navbar";
 import Image from "next/image";
-import Link from "next/link";
 import CONFIG from "@/utils/configurations/config";
+import helpers from "@/utils/helpers/helpers";
+import {cookies} from "next/headers";
+import {redirect, RedirectType} from "next/navigation";
 
 export const metadata: Metadata = {
     title: "Products",
@@ -91,17 +93,20 @@ const fakeProducts: ProductType[] = [
     },
 ]
 
+
+
 function ProductCard ({product}: {product: ProductType}) {
     return <div className={styles.productCardContainer}>
             <Image className={styles.productImage} src={product.productImage} alt={"product image"} width={100} height={100} draggable={"false"} />
             <div className={styles.productLinkContainer}>
-                <Link className={styles.productLink} href={`${CONFIG.PATHS_CONFIG.DEFAULT_PATHS.product(product.productId)}`} prefetch={false}>{product.productName}</Link>
+                <a className={styles.productLink} href={`${CONFIG.PATHS_CONFIG.DEFAULT_PATHS.product(product.productId)}`} >{product.productName}</a>
                 <span className={styles.productPrice}>{product.productPrice}</span>
             </div>
     </div>
 }
 
-export default function Products() {
+export default async function Products() {
+
     return <section className={styles.container}>
         <Navbar />
         <div className={styles.wrapper}>
